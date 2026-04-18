@@ -1,0 +1,1 @@
+/usr/bin/cmake;-E;env;VERILATOR_ROOT=/usr/share/verilator;/usr/share/verilator/bin/verilator_bin;--compiler;gcc;--prefix;Vuart;--Mdir;/home/zach/Github/HAL/build/CMakeFiles/uart_sim.dir/Vuart.dir;--make;cmake;--trace;--cc;/home/zach/Github/HAL/hw/uart.sv

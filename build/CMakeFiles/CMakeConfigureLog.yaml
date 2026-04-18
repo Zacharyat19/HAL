@@ -1,0 +1,1085 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.17.0-1006-raspi - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/zach/Github/HAL/build/CMakeFiles/3.31.6/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-taKILi"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-taKILi"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-taKILi'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f4191/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f4191.dir/build.make CMakeFiles/cmTC_f4191.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-taKILi'
+        Building CXX object CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-4ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust,cobol,algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/gcc-15-oiPJSz/gcc-15-15.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=4
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (Ubuntu 15.2.0-4ubuntu4) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4191.dir/'
+         /usr/libexec/gcc/aarch64-linux-gnu/15/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f4191.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/cc7Yw0uB.s
+        GNU C++17 (Ubuntu 15.2.0-4ubuntu4) version 15.2.0 (aarch64-linux-gnu)
+        	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/aarch64-linux-gnu/c++/15"
+        ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/15/include-fixed/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/15/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/15/../../../../aarch64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/15
+         /usr/include/aarch64-linux-gnu/c++/15
+         /usr/include/c++/15/backward
+         /usr/lib/gcc/aarch64-linux-gnu/15/include
+         /usr/local/include
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 091fe14dc6f3f0030f2e5c8e18699f51
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4191.dir/'
+         /usr/bin/aarch64-linux-gnu-as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc7Yw0uB.s
+        GNU assembler version 2.45 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.45
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/15/:/usr/libexec/gcc/aarch64-linux-gnu/15/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/15/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/15/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_f4191
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4191.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/15/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-4ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust,cobol,algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/gcc-15-oiPJSz/gcc-15-15.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=4
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (Ubuntu 15.2.0-4ubuntu4) 
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/15/:/usr/libexec/gcc/aarch64-linux-gnu/15/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/15/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/15/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4191' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_f4191.'
+         /usr/libexec/gcc/aarch64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRjMhYZ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_f4191 /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/15 -L/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/15/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crtn.o
+        collect2 version 15.2.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRjMhYZ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_f4191 /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/15 -L/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/15/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.45
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4191' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_f4191.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f4191
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-taKILi'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/15]
+          add: [/usr/include/aarch64-linux-gnu/c++/15]
+          add: [/usr/include/c++/15/backward]
+          add: [/usr/lib/gcc/aarch64-linux-gnu/15/include]
+          add: [/usr/local/include]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/15] ==> [/usr/include/c++/15]
+        collapse include dir [/usr/include/aarch64-linux-gnu/c++/15] ==> [/usr/include/aarch64-linux-gnu/c++/15]
+        collapse include dir [/usr/include/c++/15/backward] ==> [/usr/include/c++/15/backward]
+        collapse include dir [/usr/lib/gcc/aarch64-linux-gnu/15/include] ==> [/usr/lib/gcc/aarch64-linux-gnu/15/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/15;/usr/include/aarch64-linux-gnu/c++/15;/usr/include/c++/15/backward;/usr/lib/gcc/aarch64-linux-gnu/15/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-taKILi']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f4191/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_f4191.dir/build.make CMakeFiles/cmTC_f4191.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-taKILi']
+        ignore line: [Building CXX object CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-4ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust cobol algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/gcc-15-oiPJSz/gcc-15-15.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=4]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-4ubuntu4) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4191.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-linux-gnu/15/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f4191.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/cc7Yw0uB.s]
+        ignore line: [GNU C++17 (Ubuntu 15.2.0-4ubuntu4) version 15.2.0 (aarch64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/aarch64-linux-gnu/c++/15"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/15/include-fixed/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/15/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/15/../../../../aarch64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/15]
+        ignore line: [ /usr/include/aarch64-linux-gnu/c++/15]
+        ignore line: [ /usr/include/c++/15/backward]
+        ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/15/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 091fe14dc6f3f0030f2e5c8e18699f51]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4191.dir/']
+        ignore line: [ /usr/bin/aarch64-linux-gnu-as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc7Yw0uB.s]
+        ignore line: [GNU assembler version 2.45 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.45]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/15/:/usr/libexec/gcc/aarch64-linux-gnu/15/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/15/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/15/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_f4191]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4191.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/15/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-4ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust cobol algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/gcc-15-oiPJSz/gcc-15-15.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=4]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-4ubuntu4) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/15/:/usr/libexec/gcc/aarch64-linux-gnu/15/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/15/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/15/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/15/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4191' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_f4191.']
+        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRjMhYZ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_f4191 /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/15 -L/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/15/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/15/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/15/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/15/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccRjMhYZ.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_f4191] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/15/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/15/crtbeginS.o]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/15] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/15]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/15/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/15/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/15/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/15/crtendS.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 15.2.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRjMhYZ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_f4191 /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/15 -L/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f4191.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/15/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/Scrt1.o] ==> [/usr/lib/aarch64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crti.o] ==> [/usr/lib/aarch64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu/crtn.o] ==> [/usr/lib/aarch64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/15] ==> [/usr/lib/gcc/aarch64-linux-gnu/15]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/15/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/15/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/15/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/aarch64-linux-gnu/Scrt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/15/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/15/crtendS.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/15;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.45
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _faligned_new"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-Eebj6k"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-Eebj6k"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_faligned_new"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-Eebj6k'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_77b19/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_77b19.dir/build.make CMakeFiles/cmTC_77b19.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-Eebj6k'
+        Building CXX object CMakeFiles/cmTC_77b19.dir/src.cxx.o
+        /usr/bin/c++ -D_faligned_new  -std=gnu++17   -faligned-new -o CMakeFiles/cmTC_77b19.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-Eebj6k/src.cxx
+        Linking CXX executable cmTC_77b19
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77b19.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_77b19.dir/src.cxx.o -o cmTC_77b19
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-Eebj6k'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _fbracket_depth_4096"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-dyk9uH"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-dyk9uH"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_fbracket_depth_4096"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-dyk9uH'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_813c3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_813c3.dir/build.make CMakeFiles/cmTC_813c3.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-dyk9uH'
+        Building CXX object CMakeFiles/cmTC_813c3.dir/src.cxx.o
+        /usr/bin/c++ -D_fbracket_depth_4096  -std=gnu++17   -fbracket-depth=4096 -o CMakeFiles/cmTC_813c3.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-dyk9uH/src.cxx
+        c++: error: unrecognized command-line option '-fbracket-depth=4096'
+        gmake[1]: *** [CMakeFiles/cmTC_813c3.dir/build.make:81: CMakeFiles/cmTC_813c3.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-dyk9uH'
+        gmake: *** [Makefile:134: cmTC_813c3/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _fcf_protection_none"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-XNmJ8R"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-XNmJ8R"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_fcf_protection_none"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-XNmJ8R'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_217ee/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_217ee.dir/build.make CMakeFiles/cmTC_217ee.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-XNmJ8R'
+        Building CXX object CMakeFiles/cmTC_217ee.dir/src.cxx.o
+        /usr/bin/c++ -D_fcf_protection_none  -std=gnu++17   -fcf-protection=none -o CMakeFiles/cmTC_217ee.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-XNmJ8R/src.cxx
+        Linking CXX executable cmTC_217ee
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_217ee.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_217ee.dir/src.cxx.o -o cmTC_217ee
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-XNmJ8R'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _mno_cet"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-d6xpUU"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-d6xpUU"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_mno_cet"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-d6xpUU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_eccc2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_eccc2.dir/build.make CMakeFiles/cmTC_eccc2.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-d6xpUU'
+        Building CXX object CMakeFiles/cmTC_eccc2.dir/src.cxx.o
+        /usr/bin/c++ -D_mno_cet  -std=gnu++17   -mno-cet -o CMakeFiles/cmTC_eccc2.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-d6xpUU/src.cxx
+        c++: error: unrecognized command-line option '-mno-cet'
+        gmake[1]: *** [CMakeFiles/cmTC_eccc2.dir/build.make:81: CMakeFiles/cmTC_eccc2.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-d6xpUU'
+        gmake: *** [Makefile:134: cmTC_eccc2/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _Qunused_arguments"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-KVDd3v"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-KVDd3v"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Qunused_arguments"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-KVDd3v'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_07a9c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_07a9c.dir/build.make CMakeFiles/cmTC_07a9c.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-KVDd3v'
+        Building CXX object CMakeFiles/cmTC_07a9c.dir/src.cxx.o
+        /usr/bin/c++ -D_Qunused_arguments  -std=gnu++17   -Qunused-arguments -o CMakeFiles/cmTC_07a9c.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-KVDd3v/src.cxx
+        c++: error: unrecognized command-line option '-Qunused-arguments'
+        gmake[1]: *** [CMakeFiles/cmTC_07a9c.dir/build.make:81: CMakeFiles/cmTC_07a9c.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-KVDd3v'
+        gmake: *** [Makefile:134: cmTC_07a9c/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _Wno_bool_operation"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-wi2j79"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-wi2j79"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_bool_operation"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-wi2j79'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_42307/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_42307.dir/build.make CMakeFiles/cmTC_42307.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-wi2j79'
+        Building CXX object CMakeFiles/cmTC_42307.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_bool_operation  -std=gnu++17   -Wno-bool-operation -o CMakeFiles/cmTC_42307.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-wi2j79/src.cxx
+        Linking CXX executable cmTC_42307
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42307.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_42307.dir/src.cxx.o -o cmTC_42307
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-wi2j79'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _Wno_c__11_narrowing"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-zuRhlS"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-zuRhlS"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_c__11_narrowing"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-zuRhlS'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_638ee/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_638ee.dir/build.make CMakeFiles/cmTC_638ee.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-zuRhlS'
+        Building CXX object CMakeFiles/cmTC_638ee.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_c__11_narrowing  -std=gnu++17   -Wno-c++11-narrowing -o CMakeFiles/cmTC_638ee.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-zuRhlS/src.cxx
+        Linking CXX executable cmTC_638ee
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_638ee.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_638ee.dir/src.cxx.o -o cmTC_638ee
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-zuRhlS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _Wno_constant_logical_operand"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-KCKhoG"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-KCKhoG"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_constant_logical_operand"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-KCKhoG'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f3e7b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f3e7b.dir/build.make CMakeFiles/cmTC_f3e7b.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-KCKhoG'
+        Building CXX object CMakeFiles/cmTC_f3e7b.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_constant_logical_operand  -std=gnu++17   -Wno-constant-logical-operand -o CMakeFiles/cmTC_f3e7b.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-KCKhoG/src.cxx
+        Linking CXX executable cmTC_f3e7b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3e7b.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_f3e7b.dir/src.cxx.o -o cmTC_f3e7b
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-KCKhoG'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _Wno_non_pod_varargs"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-V8E3lB"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-V8E3lB"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_non_pod_varargs"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-V8E3lB'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3ccaf/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3ccaf.dir/build.make CMakeFiles/cmTC_3ccaf.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-V8E3lB'
+        Building CXX object CMakeFiles/cmTC_3ccaf.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_non_pod_varargs  -std=gnu++17   -Wno-non-pod-varargs -o CMakeFiles/cmTC_3ccaf.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-V8E3lB/src.cxx
+        Linking CXX executable cmTC_3ccaf
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ccaf.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_3ccaf.dir/src.cxx.o -o cmTC_3ccaf
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-V8E3lB'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _Wno_parentheses_equality"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-gewwVI"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-gewwVI"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_parentheses_equality"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-gewwVI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_79fd8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_79fd8.dir/build.make CMakeFiles/cmTC_79fd8.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-gewwVI'
+        Building CXX object CMakeFiles/cmTC_79fd8.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_parentheses_equality  -std=gnu++17   -Wno-parentheses-equality -o CMakeFiles/cmTC_79fd8.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-gewwVI/src.cxx
+        Linking CXX executable cmTC_79fd8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79fd8.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_79fd8.dir/src.cxx.o -o cmTC_79fd8
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-gewwVI'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _Wno_shadow"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-AF1mbc"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-AF1mbc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_shadow"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-AF1mbc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_da920/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_da920.dir/build.make CMakeFiles/cmTC_da920.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-AF1mbc'
+        Building CXX object CMakeFiles/cmTC_da920.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_shadow  -std=gnu++17   -Wno-shadow -o CMakeFiles/cmTC_da920.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-AF1mbc/src.cxx
+        Linking CXX executable cmTC_da920
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da920.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_da920.dir/src.cxx.o -o cmTC_da920
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-AF1mbc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _Wno_sign_compare"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-kquEmG"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-kquEmG"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_sign_compare"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-kquEmG'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cc1da/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cc1da.dir/build.make CMakeFiles/cmTC_cc1da.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-kquEmG'
+        Building CXX object CMakeFiles/cmTC_cc1da.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_sign_compare  -std=gnu++17   -Wno-sign-compare -o CMakeFiles/cmTC_cc1da.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-kquEmG/src.cxx
+        Linking CXX executable cmTC_cc1da
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc1da.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_cc1da.dir/src.cxx.o -o cmTC_cc1da
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-kquEmG'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _Wno_tautological_bitwise_compare"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-EuWvC3"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-EuWvC3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_tautological_bitwise_compare"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-EuWvC3'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_15c6e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_15c6e.dir/build.make CMakeFiles/cmTC_15c6e.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-EuWvC3'
+        Building CXX object CMakeFiles/cmTC_15c6e.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_tautological_bitwise_compare  -std=gnu++17   -Wno-tautological-bitwise-compare -o CMakeFiles/cmTC_15c6e.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-EuWvC3/src.cxx
+        Linking CXX executable cmTC_15c6e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15c6e.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_15c6e.dir/src.cxx.o -o cmTC_15c6e
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-EuWvC3'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _Wno_tautological_compare"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-jho8o3"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-jho8o3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_tautological_compare"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-jho8o3'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8ef22/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8ef22.dir/build.make CMakeFiles/cmTC_8ef22.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-jho8o3'
+        Building CXX object CMakeFiles/cmTC_8ef22.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_tautological_compare  -std=gnu++17   -Wno-tautological-compare -o CMakeFiles/cmTC_8ef22.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-jho8o3/src.cxx
+        Linking CXX executable cmTC_8ef22
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ef22.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_8ef22.dir/src.cxx.o -o cmTC_8ef22
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-jho8o3'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _Wno_uninitialized"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-9bi0zi"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-9bi0zi"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_uninitialized"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-9bi0zi'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ada3b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ada3b.dir/build.make CMakeFiles/cmTC_ada3b.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-9bi0zi'
+        Building CXX object CMakeFiles/cmTC_ada3b.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_uninitialized  -std=gnu++17   -Wno-uninitialized -o CMakeFiles/cmTC_ada3b.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-9bi0zi/src.cxx
+        Linking CXX executable cmTC_ada3b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ada3b.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_ada3b.dir/src.cxx.o -o cmTC_ada3b
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-9bi0zi'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _Wno_unused_but_set_parameter"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-Pz68rf"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-Pz68rf"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_unused_but_set_parameter"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-Pz68rf'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b351d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b351d.dir/build.make CMakeFiles/cmTC_b351d.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-Pz68rf'
+        Building CXX object CMakeFiles/cmTC_b351d.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_unused_but_set_parameter  -std=gnu++17   -Wno-unused-but-set-parameter -o CMakeFiles/cmTC_b351d.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-Pz68rf/src.cxx
+        Linking CXX executable cmTC_b351d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b351d.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_b351d.dir/src.cxx.o -o cmTC_b351d
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-Pz68rf'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _Wno_unused_but_set_variable"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-scdOzt"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-scdOzt"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_unused_but_set_variable"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-scdOzt'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d2ff4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d2ff4.dir/build.make CMakeFiles/cmTC_d2ff4.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-scdOzt'
+        Building CXX object CMakeFiles/cmTC_d2ff4.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_unused_but_set_variable  -std=gnu++17   -Wno-unused-but-set-variable -o CMakeFiles/cmTC_d2ff4.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-scdOzt/src.cxx
+        Linking CXX executable cmTC_d2ff4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2ff4.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_d2ff4.dir/src.cxx.o -o cmTC_d2ff4
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-scdOzt'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _Wno_unused_parameter"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-GIX3qV"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-GIX3qV"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_unused_parameter"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-GIX3qV'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fb3c8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fb3c8.dir/build.make CMakeFiles/cmTC_fb3c8.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-GIX3qV'
+        Building CXX object CMakeFiles/cmTC_fb3c8.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_unused_parameter  -std=gnu++17   -Wno-unused-parameter -o CMakeFiles/cmTC_fb3c8.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-GIX3qV/src.cxx
+        Linking CXX executable cmTC_fb3c8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb3c8.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_fb3c8.dir/src.cxx.o -o cmTC_fb3c8
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-GIX3qV'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/usr/share/verilator/verilator-config.cmake:77 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _Wno_unused_variable"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-rZ2ZFl"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-rZ2ZFl"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_Wno_unused_variable"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-rZ2ZFl'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d24d0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d24d0.dir/build.make CMakeFiles/cmTC_d24d0.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-rZ2ZFl'
+        Building CXX object CMakeFiles/cmTC_d24d0.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_unused_variable  -std=gnu++17   -Wno-unused-variable -o CMakeFiles/cmTC_d24d0.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-rZ2ZFl/src.cxx
+        Linking CXX executable cmTC_d24d0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d24d0.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_d24d0.dir/src.cxx.o -o cmTC_d24d0
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-rZ2ZFl'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/verilator/verilator-config.cmake:64 (check_cxx_source_compiles)"
+      - "/usr/share/verilator/verilator-config.cmake:84 (_verilator_check_cxx_libraries)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _mt"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-ly10nD"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-ly10nD"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_mt"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-ly10nD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9a4d1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9a4d1.dir/build.make CMakeFiles/cmTC_9a4d1.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-ly10nD'
+        Building CXX object CMakeFiles/cmTC_9a4d1.dir/src.cxx.o
+        /usr/bin/c++ -D_mt  -std=gnu++17 -o CMakeFiles/cmTC_9a4d1.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-ly10nD/src.cxx
+        Linking CXX executable cmTC_9a4d1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a4d1.dir/link.txt --verbose=1
+        c++: error: unrecognized command-line option ‘-mt’; did you mean ‘-MT’?
+        /usr/bin/c++ CMakeFiles/cmTC_9a4d1.dir/src.cxx.o -o cmTC_9a4d1  -mt
+        gmake[1]: *** [CMakeFiles/cmTC_9a4d1.dir/build.make:102: cmTC_9a4d1] Error 1
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-ly10nD'
+        gmake: *** [Makefile:134: cmTC_9a4d1/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/verilator/verilator-config.cmake:64 (check_cxx_source_compiles)"
+      - "/usr/share/verilator/verilator-config.cmake:84 (_verilator_check_cxx_libraries)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _pthread"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-sux6NT"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-sux6NT"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_pthread"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-sux6NT'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3f17f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3f17f.dir/build.make CMakeFiles/cmTC_3f17f.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-sux6NT'
+        Building CXX object CMakeFiles/cmTC_3f17f.dir/src.cxx.o
+        /usr/bin/c++ -D_pthread  -std=gnu++17 -o CMakeFiles/cmTC_3f17f.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-sux6NT/src.cxx
+        Linking CXX executable cmTC_3f17f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f17f.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_3f17f.dir/src.cxx.o -o cmTC_3f17f  -pthread
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-sux6NT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/verilator/verilator-config.cmake:64 (check_cxx_source_compiles)"
+      - "/usr/share/verilator/verilator-config.cmake:84 (_verilator_check_cxx_libraries)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _lpthread"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-sRbPnw"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-sRbPnw"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_lpthread"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-sRbPnw'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_80ab8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_80ab8.dir/build.make CMakeFiles/cmTC_80ab8.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-sRbPnw'
+        Building CXX object CMakeFiles/cmTC_80ab8.dir/src.cxx.o
+        /usr/bin/c++ -D_lpthread  -std=gnu++17 -o CMakeFiles/cmTC_80ab8.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-sRbPnw/src.cxx
+        Linking CXX executable cmTC_80ab8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80ab8.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_80ab8.dir/src.cxx.o -o cmTC_80ab8  -lpthread
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-sRbPnw'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/verilator/verilator-config.cmake:64 (check_cxx_source_compiles)"
+      - "/usr/share/verilator/verilator-config.cmake:84 (_verilator_check_cxx_libraries)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test _latomic"
+    directories:
+      source: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-9wXfBy"
+      binary: "/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-9wXfBy"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_latomic"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-9wXfBy'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_79113/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_79113.dir/build.make CMakeFiles/cmTC_79113.dir/build
+        gmake[1]: Entering directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-9wXfBy'
+        Building CXX object CMakeFiles/cmTC_79113.dir/src.cxx.o
+        /usr/bin/c++ -D_latomic  -std=gnu++17 -o CMakeFiles/cmTC_79113.dir/src.cxx.o -c /home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-9wXfBy/src.cxx
+        Linking CXX executable cmTC_79113
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79113.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_79113.dir/src.cxx.o -o cmTC_79113  -latomic
+        gmake[1]: Leaving directory '/home/zach/Github/HAL/build/CMakeFiles/CMakeScratch/TryCompile-9wXfBy'
+        
+      exitCode: 0
+...

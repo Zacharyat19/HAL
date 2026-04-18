@@ -87,6 +87,7 @@ module uart #(
                         tx_ready <= 1'b1;
                     end
                 end
+                default: tx_state <= TX_IDLE;
             endcase
         end
     end
@@ -161,6 +162,7 @@ module uart #(
                         end
                     end
                 end
+                default: rx_state <= RX_IDLE;
             endcase
         end
     end

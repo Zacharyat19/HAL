@@ -1,0 +1,3 @@
+/home/zach/Github/HAL/build/CMakeFiles/uart_sim.dir
+/home/zach/Github/HAL/build/CMakeFiles/edit_cache.dir
+/home/zach/Github/HAL/build/CMakeFiles/rebuild_cache.dir
